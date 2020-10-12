@@ -1,0 +1,78 @@
+.thingy {
+	margin: auto;
+	font-size: 3em;
+	line-height: 50%;
+	border-radius: 1rem;
+}
+
+.thingy a:link, .thingy a:visited {
+	color: var(--text-color);
+	-webkit-text-fill-color: var(--bg-primary);
+	-webkit-text-stroke-width: 0.12rem;
+	-webkit-text-stroke-color: unset;
+}
+
+.thingy a:hover, .thingy a:active {
+	-webkit-text-stroke: 0;
+}
+
+#col1 {
+	text-align: right;
+	align-self: center;
+}
+
+@media only screen and (orientation: landscape) {
+	nav ul {
+		float: right;
+		padding: 0 .5rem 0 0;
+	}
+	
+	.thingy {
+		display: flex;
+		display: none;
+		flex-flow: row nowrap;
+		place-content: center;
+		align-items: center;
+	}
+	
+	.thingy > * {
+		margin: 0 .5rem;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+.thingy {
+		display: grid;
+		display: none;
+		grid-template:
+			"col1 me" 1fr
+			"col2 me" 1fr
+			/ auto auto;
+		column-gap: .5rem;
+		justify-content: center;
+	}
+	
+	#col1 {
+		grid-area: col1;
+		justify-self: end;
+		
+	}
+	
+	#col1 :first-child{
+		margin-top: 0;
+	}
+	
+	#col1 :last-child, #col2 :last-child {
+		margin-bottom: 0;
+	}
+	
+	#col2 {
+		grid-area: col2;
+		text-align: right;
+		justify-self: end;
+	}
+	
+	#me {
+		justify-self: center;
+	}
+}
