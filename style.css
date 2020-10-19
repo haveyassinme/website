@@ -1,0 +1,186 @@
+:root {
+	font-size: min(1.5vw, 2vh);
+	font-family: 'Roboto Sans';
+	--text-color: white;
+	--bg-primary: #3a4b53;
+	
+	--art-color: #DD2C4A;
+	--code-color: #2E86AB;
+	--coop-color: #48AD84;
+	--design-color: #DEC102;
+	--music-color: #FFC233;
+	--write-color: #8594D6;
+}
+
+a {
+	text-decoration-line: none;
+}
+
+body {
+	background-color: var(--bg-primary);
+	color: var(--text-color);
+	height: fit-content;
+	margin: 0;
+}
+
+header {
+	grid-area: header;
+	height: fit-content;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2vw;
+	margin-top: 8px;
+}
+
+nav {
+	display: flex;
+	font-size: 15px;
+	margin: 0;
+	font-weight: bolder;
+	z-index: 1;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#home {
+	display: flex;
+	width: fit-content; 
+	z-index: 3;
+	color: var(--text-color);
+	font-size: 17px;
+	font-weight: bolder;
+	padding: .5rem;
+	align-items: center;
+}
+
+.logo {
+	height: 30px;
+	width: auto;
+	margin: 0 1em;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	padding: .5rem 1rem;
+}
+
+nav a {
+	display: block;
+	color: var(--text-color);
+	-webkit-text-fill-color: var(--text-color);
+}
+
+nav a:hover, #home a#text:hover {
+	transform: scale(1.05);
+	text-shadow: 0 0 5px rgb(0 0 0 / 28%);
+}
+
+hr {
+	width: 95%;
+	height: 1px;
+	border: none;
+	background-color: white;
+}
+
+main {
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+button {
+	background-color: #607d8b;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: var(--text-color);
+	width: fit-content;
+	height: fit-content;
+	border-width: 0;
+	border-radius: 9999px;
+	padding: 1.2em;
+	float: right;
+	margin: 0 3em;
+	box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 28%);
+}
+
+button:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 35%);
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	margin: 1em 0;
+}
+
+#hi {
+	font-size: 25vh;
+	width: min-content;
+	margin: 0;
+	padding: 0 1rem;
+}
+
+#me {
+	object-fit: contain;
+	max-width: 100%;
+	max-height: 75vh;
+	width: auto;
+	height: auto;
+	align-self: center;
+	padding: 0 1em;
+}
+
+#about {
+	font-size: 3em;
+	display: flex;
+	justify-content: center;
+}
+
+#about div {
+	width: 50%;
+}
+
+.about-links {
+	position: relative;
+}
+
+.about-links:hover {
+	display: inline-block;
+	transform: scale(1.05);
+	text-shadow: 0px 0px 40px rgb(0 0 0 / 35%);
+}
+
+#work {
+	
+}
+
+footer {
+	display: flex;
+	align-items: center;;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid white;
+}
+
+.arrow {
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+}
+  
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
