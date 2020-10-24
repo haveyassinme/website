@@ -1,0 +1,53 @@
+.art, .art a:hover {
+	color:  var(--art-color);
+	-webkit-text-fill-color: var(--art-color);
+	-webkit-text-stroke-color: var(--art-color);
+}
+
+.code, .code a:hover {
+	color:  var(--code-color);
+	-webkit-text-fill-color: var(--code-color);
+	-webkit-text-stroke-color: var(--code-color);
+}
+
+.co-op, .co-op a:hover {
+	color:  var(--coop-color);
+	-webkit-text-fill-color: var(--coop-color);
+	-webkit-text-stroke-color: var(--coop-color);
+}
+
+.design, .design a:hover {
+	color:  var(--design-color);
+	-webkit-text-fill-color: var(--design-color);
+	-webkit-text-stroke-color: var(--design-color);
+}
+
+.film, .film a:hover {
+	color:  var(--film-color);
+	-webkit-text-fill-color: var(--film-color);
+	-webkit-text-stroke-color: var(--film-color);
+}
+
+.food, .food a:hover {
+	color:  var(--food-color);
+	-webkit-text-fill-color: var(--food-color);
+	-webkit-text-stroke-color: var(--food-color);
+}
+
+.make, .make a:hover {
+	color:  var(--make-color);
+	-webkit-text-fill-color: var(--make-color);
+	-webkit-text-stroke-color: var(--make-color);
+}
+
+.music, .music a:hover {
+	color:  var(--music-color);
+	-webkit-text-fill-color: var(--music-color);
+	-webkit-text-stroke-color: var(--music-color);
+}
+
+.write, .write a:hover {
+	color:  var(--write-color);
+	-webkit-text-fill-color: var(--write-color);
+	-webkit-text-stroke-color: var(--write-color);
+}
