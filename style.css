@@ -184,8 +184,12 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 38.8vw;
+	align-items: center;
 	font-size: .5em;
+}
+
+form {
+	width: 420px;
 }
 
 #contact_intro {
@@ -195,6 +199,11 @@ section {
 
 #contact_name {
 	display: flex;
+}
+
+#contact_name fieldset {
+	min-width: 0;
+	flex-shrink: 1;
 }
 
 fieldset {
@@ -216,8 +225,6 @@ input:focus {
 }
 
 textarea {
-	width: 35.8vw;
-	max-width: 35.8vw;
 	resize: none;
 }
 
