@@ -1,12 +1,13 @@
-
-
 var fields = {};
+let form = document.getElementById('form');;
 document.addEventListener("DOMContentLoaded", function() {
     fields.firstName = document.getElementById('firstName');
     fields.lastName = document.getElementById('lastName');
     fields.email = document.getElementById('email');
     fields.question = document.getElementById('message');
 });
+
+
 
 function isNotEmpty(value) {
     if (value == null || typeof value == 'undefined' ) return false;
@@ -63,5 +64,4 @@ function sendContact(event) {
 }
 
 const submit = document.getElementById('submit');
-const form = document.getElementById('form');
 form.addEventListener('submit', sendContact);
