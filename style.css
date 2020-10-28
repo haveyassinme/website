@@ -75,11 +75,6 @@ nav li {
 	margin: 0;
 }
 
-nav li:hover {
-	box-sizing: border-box;
-	background: var(--bg-secondary);
-}
-
 #menu {
 	display: none;
 }
@@ -98,12 +93,12 @@ nav a:hover, #title:hover {
 nav a:hover:after, #title:hover:after {
 	content: "";
     position: absolute;
-    top: 20px;
+    top: 21px;
     background: white;
     width:6px;
     height: 6px;
     border-radius: 100%;
-    left:calc(50% - 1px);
+    left:calc(50%);
 }
 
 hr {
