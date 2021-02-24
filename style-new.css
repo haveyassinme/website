@@ -11,10 +11,14 @@ a:link, a:visited {
 	color: black;
 }
 
+html {
+	background: white;
+}
+
 body {
 	position: absolute;
-	background-color: var(--bg-primary);
-	color: var(--text-color);
+	background-color: white;
+	color: black;
 	height: fit-content;
 	margin: 0;
 	overflow: hidden;
@@ -30,13 +34,16 @@ body {
 	transition: all .1s linear;
 	pointer-events: none;
 	backface-visibility: hidden;
-	background-color: white;
+	background: white;
 	mix-blend-mode: difference;
+	
+	
 }
 
 header {
 	width: 100vw;
 	height: 10vh;
+	margin: 0 2em;
 }
 
 main {
@@ -96,6 +103,12 @@ main {
 
 .social-icon {
 	margin: .5em;
+	transition: all .1s ease-in;
+}
+
+.social-icon:hover {
+	transform-origin: center;
+	transform: scale(1.2);
 }
 
 .social-icon:first-child {
@@ -118,7 +131,6 @@ button {
     display: inline;
     width: 1096px;
     height: 1096px;
-    z-index: -1;
     transform:  translate(calc(-112px + 7vw), -64px);
 }
 
@@ -154,7 +166,7 @@ button {
 	#illustration {
 		width: 720px;
 		height: 720px;
-		transform:  translate(calc(-900px + 7vw), calc(300px + 3vh));
+		transform:  translate(calc(-900px + 7vw), calc(300px + 3vh - 3vw));
 	}
 
 	#contact {
