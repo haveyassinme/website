@@ -23,7 +23,6 @@ body {
 main {
 	display: flex;
 	flex-wrap: nowrap;
-	overflow: hidden;
 }
 
 .logo {
@@ -38,8 +37,9 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	margin-left: 12%;
+	margin-left: calc(4em + 6vw);
 	width: 40em;
+	height: min-content;
 }
 
 #title {
@@ -48,8 +48,10 @@ main {
 	font-weight: normal;
 	stroke-width: 0;
 	line-height: 86.5%;
-	letter-spacing: -.06em;
-	margin: .75em 0 0;
+    letter-spacing: -.06em;
+    margin: 0;
+	margin-top: .75em;
+	width: min-content;
 }
 
 #subtitle {
@@ -57,17 +59,20 @@ main {
 	font-family: 'Walter Turncoat', cursive;
 	line-height: 86.5%;
 	margin-top: .5em;
+	width: 75vw;
+	display: inline;
 }
 
 #contact {
 	display: flex;
 	flex-wrap: nowrap;
-
+	align-items: center;
+	width: fit-content;
 }
 
 #social {
 	font-size: 36px;
-	margin: 0 1em;
+	margin-left: 1em;
 }
 
 .social-icon {
@@ -90,23 +95,44 @@ button {
 	padding: .8em 2em;
 }
 
-#drawing {
-	width: 1048px;
-	height: 1048px;
-	top: 4vh;
-}
-
 #illustration {
-	transform:  translate(5vw, 0vh);
-	overflow: hidden;
+    display: inline;
+    width: 1096px;
+    height: 1096px;
+    z-index: -1;
+    transform:  translate(calc(-112px + 7vw), -64px);
 }
 
 @media only screen and (max-width: 834px ) {
+    #index {
+		margin: 0 calc(10vw);
+		width: 80vw;
+	}
+	
+	#title {
+	}
 
+    #illustration {
+        transform:  translate(calc(-672px + 7vw), calc(480px + 3vh));
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    #title {
+		font-size: calc(72px + 7vw);
+		margin-top: calc(1em + 1vh);
+		/* font-size: calc(72px + 56 * ((100vw - 300px) / 400)); */
+    }
+    #subtitle, button {
+		font-size: calc(12px + 1vw);
+    }
+}
 
+@media only screen and (max-width: 600px) {
+	#illustration {
+		width: 720px;
+		height: 720px;
+	}
 }
 
 @media only screen and (max-width: 440px) {
