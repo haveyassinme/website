@@ -135,6 +135,10 @@ button {
 }
 
 @media only screen and (max-width: 834px ) {
+	#cursor {
+		display: none;
+	}
+
     #index {
 		margin: 0 4em;
 		width: 80vw;
