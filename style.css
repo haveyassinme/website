@@ -1,6 +1,7 @@
 a {
 	text-decoration-line: none;
 	width: fit-content;
+	cursor: none;
 }
 
 a:link, a:visited {
@@ -31,7 +32,7 @@ body {
 	height: 64px;
 	border-radius: 50%;
 	position: absolute;
-	transition: all .1s linear;
+	transition: all .1s ease-out;
 	pointer-events: none;
 	backface-visibility: hidden;
 	background: white;
