@@ -7,7 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
     fields.message = document.getElementById('message');
 });
 
-
+let cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = (e.pageX - 32) + 'px';
+    cursor.style.top = (e.pageY - 32) + 'px';
+})
 
 function isNotEmpty(value) {
     if (value == null || typeof value == 'undefined' ) return false;
@@ -63,4 +67,4 @@ function sendContact(event) {
 }
 
 const submit = document.getElementById('submit');
-form.addEventListener('submit', sendContact);
+// form.addEventListener('submit', sendContact);
