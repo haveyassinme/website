@@ -1,57 +1,104 @@
 a {
 	text-decoration-line: none;
+	width: fit-content;
+}
+
+a:link, a:visited {
+	color: white;
+}
+
+#social a:link, #social a:visited {
+	color: black;
 }
 
 body {
+	position: absolute;
 	background-color: var(--bg-primary);
 	color: var(--text-color);
 	height: fit-content;
 	margin: 0;
+	overflow: hidden;
 }
 
-header {
-	grid-area: header;
-	height: fit-content;
+main {
 	display: flex;
-	justify-content: space-between;
-	padding: 0 2vw;
-	margin-top: 8px;
+	flex-wrap: nowrap;
+	overflow: hidden;
 }
 
 .logo {
 	height: 30px;
 	width: auto;
-	margin: 0;
-	margin-right: 1em;
+	position: absolute;
+	top: 32px; left: 64px;
+	height: 40px;
 }
 
-section {
+#index {
 	display: flex;
-	justify-content: center;
-	margin: 1em 0;
+	flex-direction: column;
+	margin: 0;
+	margin-left: 12%;
+	width: 40em;
 }
 
-#hi {
-    font-size: 128px;
+#title {
+	font-size: 128px;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-weight: normal;
+	stroke-width: 0;
+	line-height: 86.5%;
+	letter-spacing: -.06em;
+	margin: .75em 0 0;
+}
+
+#subtitle {
+	font-size: 24px;
+	font-family: 'Walter Turncoat', cursive;
+	line-height: 86.5%;
+	margin-top: .5em;
+}
+
+#contact {
+	display: flex;
+	flex-wrap: nowrap;
+
 }
 
 #social {
-    font-size: 24px;
+	font-size: 36px;
+	margin: 0 1em;
+}
+
+.social-icon {
+	margin: .5em;
+}
+
+.social-icon:first-child {
+	margin-left: 0;
 }
 
 button {
 	background-color: black;
-	font-family: inherit;
-	font-weight: bold;
-	font-size: 1rem;
+	font-family: 'Walter Turncoat', cursive;
+	font-size: 24px;
 	color: var(--text-color);
 	width: fit-content;
 	height: fit-content;
 	border-width: 0;
 	border-radius: 9999px;
-	padding: 1em 1.2em;
-	float: right;
-	margin: 1em 0;
+	padding: .8em 2em;
+}
+
+#drawing {
+	width: 1048px;
+	height: 1048px;
+	top: 4vh;
+}
+
+#illustration {
+	transform:  translate(5vw, 0vh);
+	overflow: hidden;
 }
 
 @media only screen and (max-width: 834px ) {
