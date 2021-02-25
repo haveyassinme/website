@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let cursor = document.getElementById('cursor');
 document.addEventListener('mousemove', (e) => {
+    cursor.style.display = 'block';
     cursor.style.left = (e.pageX - 32) + 'px';
     cursor.style.top = (e.pageY - 32) + 'px';
 })
